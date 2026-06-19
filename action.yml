@@ -1,0 +1,24 @@
+name: 'Hello World'
+description: 'A friendly Hello World GitHub Action written in JavaScript.'
+author: 'The Cloud Way'
+
+branding:
+  icon: 'smile'
+  color: 'purple'
+
+inputs:
+  name:
+    description: 'Who to greet.'
+    required: true
+  greeting:
+    description: 'The greeting word to use.'
+    required: false
+    default: 'Hello'
+
+outputs:
+  message:
+    description: 'The full greeting message that was produced.'
+
+runs:
+  using: 'node20'
+  main: 'dist/index.js'

@@ -1,0 +1,39 @@
+{
+  "name": "gh-action-hello-world",
+  "version": "0.0.0-development",
+  "description": "A friendly Hello World GitHub Action written in JavaScript.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "ncc build src/index.js -o dist --source-map --license licenses.txt",
+    "test": "node --test",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "github-action",
+    "hello-world",
+    "example"
+  ],
+  "author": "The Cloud Way",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheCloudWay/gh-action-hello-world.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TheCloudWay/gh-action-hello-world/issues"
+  },
+  "homepage": "https://github.com/TheCloudWay/gh-action-hello-world#readme",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@actions/core": "^1.11.1"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/exec": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@vercel/ncc": "^0.38.3",
+    "semantic-release": "^24.2.3"
+  }
+}
