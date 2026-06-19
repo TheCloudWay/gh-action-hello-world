@@ -38,7 +38,7 @@ test('greets using the default greeting', async () => {
   const output = await captureStdout(run);
 
   assert.notStrictEqual(process.exitCode, 1);
-  assert.match(output, /::set-output|message/);
+  assert.match(output, /Hello, World!/);
 });
 
 test('uses a custom greeting', async () => {
